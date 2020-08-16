@@ -9,12 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  
+  private lazy var rBtn = UIBarButtonItem(image: UIImage(systemName: "square.and.arrow.down"),
+                                          style: .plain, target: self, action: #selector(loadMovies))
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    configureUI()
   }
-
-
+  
+  private func configureUI() {
+    view.backgroundColor = .white
+    navigationItem.rightBarButtonItem = rBtn
+  }
+  
+  @objc func loadMovies() {
+    
+  }
+  
+  
 }
 

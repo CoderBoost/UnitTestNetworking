@@ -10,7 +10,6 @@
 		4A3769AC24E9CA67009A3AA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3769AB24E9CA67009A3AA8 /* AppDelegate.swift */; };
 		4A3769AE24E9CA67009A3AA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3769AD24E9CA67009A3AA8 /* SceneDelegate.swift */; };
 		4A3769B024E9CA67009A3AA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3769AF24E9CA67009A3AA8 /* ViewController.swift */; };
-		4A3769B324E9CA67009A3AA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3769B124E9CA67009A3AA8 /* Main.storyboard */; };
 		4A3769B524E9CA6A009A3AA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A3769B424E9CA6A009A3AA8 /* Assets.xcassets */; };
 		4A3769B824E9CA6A009A3AA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3769B624E9CA6A009A3AA8 /* LaunchScreen.storyboard */; };
 		4A3769C324E9CA6B009A3AA8 /* UnitTestNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3769C224E9CA6B009A3AA8 /* UnitTestNetworkingTests.swift */; };
@@ -31,7 +30,6 @@
 		4A3769AB24E9CA67009A3AA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A3769AD24E9CA67009A3AA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4A3769AF24E9CA67009A3AA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4A3769B224E9CA67009A3AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A3769B424E9CA6A009A3AA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A3769B724E9CA6A009A3AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A3769B924E9CA6A009A3AA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,7 +80,6 @@
 				4A3769AB24E9CA67009A3AA8 /* AppDelegate.swift */,
 				4A3769AD24E9CA67009A3AA8 /* SceneDelegate.swift */,
 				4A3769AF24E9CA67009A3AA8 /* ViewController.swift */,
-				4A3769B124E9CA67009A3AA8 /* Main.storyboard */,
 				4A3769B424E9CA6A009A3AA8 /* Assets.xcassets */,
 				4A3769B624E9CA6A009A3AA8 /* LaunchScreen.storyboard */,
 				4A3769B924E9CA6A009A3AA8 /* Info.plist */,
@@ -182,7 +179,6 @@
 			files = (
 				4A3769B824E9CA6A009A3AA8 /* LaunchScreen.storyboard in Resources */,
 				4A3769B524E9CA6A009A3AA8 /* Assets.xcassets in Resources */,
-				4A3769B324E9CA67009A3AA8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +221,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4A3769B124E9CA67009A3AA8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4A3769B224E9CA67009A3AA8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4A3769B624E9CA6A009A3AA8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -365,6 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NT4ZPH7Z6M;
 				INFOPLIST_FILE = UnitTestNetworking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,7 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gregorio.daymein.UnitTestNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -383,6 +372,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NT4ZPH7Z6M;
 				INFOPLIST_FILE = UnitTestNetworking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,7 +380,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gregorio.daymein.UnitTestNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
